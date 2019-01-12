@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="list-group" *ngIf="resource">
+        <app-resource-item *ngFor="let res of resource._embedded.items" [resource]="res" class="list-group-item"></app-resource-item>
+      </div>
+    </div>
+  </div>
+</div>

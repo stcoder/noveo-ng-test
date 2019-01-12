@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Авторизация</h1>
+  <div class="alert alert-danger" *ngIf="error">
+    <h4 class="alert-heading">Error: {{ error.type }}</h4>
+    <p>{{ error.description }}</p>
+  </div>
+  <a [href]="loginUrl" class="btn btn-primary">Yandex-OAuth</a>
+</div>
